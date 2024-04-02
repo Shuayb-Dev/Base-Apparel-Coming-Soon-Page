@@ -1,0 +1,23 @@
+body {
+  background-image: url(imgs/bg-pattern-desktop.svg);
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftSide {
+  height: auto;
+  width: 50%;
+}
+
+.rightSide {
+  height: auto;
+  width: 50%;
+}
+
+.rightSide img {
+  width: 100%; /* Set the width of the image to 100% */
+  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+}
