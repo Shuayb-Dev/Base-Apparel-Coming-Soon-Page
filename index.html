@@ -6,6 +6,12 @@
     <title>Base Apparel coming soon page</title>
     <link rel="icon" type="image/x-icon" href="imgs/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
     <script src="index.js"></script>
   </head>
   <body>
@@ -14,7 +20,7 @@
         <div class="leftSide">
           <img src="imgs/logo.svg" alt="company logo" />
           <h1>
-            We're
+            <span>WE'RE</span>
             <br />
             COMING
             <br />
@@ -27,9 +33,18 @@
             <br />
             announcements and our launch deals.
           </p>
+          <form class="email">
+            <input
+              for="email"
+              id="email"
+              type="email"
+              placeholder="Email Address"
+            />
+            <button type="submit" onclick="ValidateEmail()">Submit</button>
+          </form>
         </div>
 
-        <div class="rightside">
+        <div class="rightSide">
           <img
             src="imgs/hero-desktop.jpg"
             alt="Picture of brand representative"

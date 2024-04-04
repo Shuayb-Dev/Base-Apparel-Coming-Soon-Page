@@ -1,23 +1,69 @@
 body {
   background-image: url(imgs/bg-pattern-desktop.svg);
+  margin: 0px;
 }
 
 .mainContainer {
   display: flex;
   flex-direction: row;
+  height: 400px;
+  margin: 0px;
 }
 
 .leftSide {
   height: auto;
   width: 50%;
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+
+.leftSide span {
+  font-weight: 200;
+  color: hsl(359, 31%, 70%);
+  font-size: 60px;
+}
+
+.leftSide h1 {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 10px;
+  color: hsl(353, 7%, 24%);
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.leftSide p {
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 23%, 79%);
+  font-size: 20px;
 }
 
 .rightSide {
-  height: auto;
   width: 50%;
 }
 
 .rightSide img {
-  width: 100%; /* Set the width of the image to 100% */
-  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+  width: 100%;
+  height: 1000px;
+}
+
+.email {
+  display: flex; /* Use flexbox to align items */
+}
+
+.email input {
+  border-radius: 20px;
+  border-style: none;
+  border: solid 1px hsl(0, 23%, 79%);
+  height: 50px;
+  width: 400px;
+}
+
+.submitImage {
+  border-radius: 20px;
+  border-style: none;
+  background-color: hsl(0, 23%, 79%);
+  height: 53px;
+  width: 100px; /* Adjust the width of the button as needed */
+  margin-left: -100px; /* Add margin to separate the input and button */
 }
