@@ -1,18 +1,12 @@
-function ValidateEmail(input) {
+function ValidateEmail() {
+  event.preventDefault();
+  var input = document.getElementById("input");
   var validRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
   if (input.value.match(validRegex)) {
-    alert("Valid email address!");
-
-    document.form1.text1.focus();
-
-    return true;
+    document.getElementById("result").innerHTML = "Valid email address!";
   } else {
-    alert("Invalid email address!");
-
-    document.form1.text1.focus();
-
-    return false;
+    document.getElementById("result").innerHTML = "Invalid email address!";
   }
 }

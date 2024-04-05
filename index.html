@@ -36,12 +36,20 @@
           <form class="email">
             <input
               for="email"
-              id="email"
+              id="input"
               type="email"
               placeholder="Email Address"
             />
-            <button type="submit" onclick="ValidateEmail()">Submit</button>
+            <div class="imgBackground">
+              <img
+                class="submitImage"
+                src="imgs/icon-arrow.svg"
+                alt="submit icon"
+                onclick="ValidateEmail()"
+              />
+            </div>
           </form>
+          <p id="result"></p>
         </div>
 
         <div class="rightSide">

@@ -35,7 +35,8 @@ body {
 .leftSide p {
   font-family: "Josefin Sans", sans-serif;
   color: hsl(0, 23%, 79%);
-  font-size: 20px;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 .rightSide {
@@ -57,13 +58,32 @@ body {
   border: solid 1px hsl(0, 23%, 79%);
   height: 50px;
   width: 400px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  text-indent: 20px;
+  color: hsl(0, 23%, 79%);
 }
 
 .submitImage {
+  position: relative;
+  left: 35px;
+  top: 10px;
   border-radius: 20px;
   border-style: none;
-  background-color: hsl(0, 23%, 79%);
-  height: 53px;
-  width: 100px; /* Adjust the width of the button as needed */
-  margin-left: -100px; /* Add margin to separate the input and button */
+  height: 30px;
+  width: 30px; /* Adjust the width of the button as needed */
+  cursor: pointer;
+  margin: auto;
+  display: inline-block;
+}
+
+.imgBackground {
+  position: relative;
+  right: 97px;
+  height: auto;
+  width: 100px;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+  display: inline-block;
+  border-radius: 30px;
 }
