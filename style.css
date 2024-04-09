@@ -99,7 +99,8 @@ body {
 
   .leftSide {
     position: relative;
-    top: 700px;
+    top: 750px;
+    width: 300px;
   }
 
   .leftSide img {
@@ -108,9 +109,25 @@ body {
     right: 80px;
   }
 
+  .leftSide h1,
+  span {
+    text-align: center;
+  }
+
+  .leftSide p {
+    text-align: center;
+  }
+
+  .leftSide h1,
+  p {
+    position: relative;
+    right: 50px;
+    bottom: 240px;
+  }
+
   .rightSide {
     position: relative;
-    bottom: 600px;
+    bottom: 550px;
   }
 
   .rightSide img {
@@ -122,5 +139,13 @@ body {
     height: 400px;
     width: 410px;
     position: relative;
+  }
+
+  .email {
+    position: relative;
+    right: 90px;
+    width: 480px;
+    bottom: 220px;
+    padding-bottom: 30px;
   }
 }
